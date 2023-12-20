@@ -1,3 +1,5 @@
+# My Container Repository
+
 The preferred way of managing software in nextflow dsl2 seems to be to use a separate container for each process. For example, for process `trim_galore`, use the `trim_galore` container. As such, we need to know how to create these containers.
 
 While this may seem super annoying, it will simplify software dependencies considerably, as each image only needs to container one piece of software and its dependencies.
