@@ -1,0 +1,6 @@
+FROM mambaorg/micromamba:1.5.1
+
+COPY environment.yaml /tmp/environment.yaml
+
+RUN micromamba install -y -n base -f /tmp/environment.yaml
+RUN micromamba clean --all --yes
