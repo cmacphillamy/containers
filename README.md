@@ -32,6 +32,8 @@ COPY environment.yaml /tmp/environment.yaml # copies the environment.yaml into t
 # Installs the software in environment.yaml into the container
 RUN micromamba install -y -n base -f /tmp/environment.yaml
 RUN micromamba clean --all --yes
+
+ENV PATH="$PATH:/opt/conda/bin" # Adds the conda bin to the PATH
 ```
 The `FROM` instruction pulls the `micromamba:1.5.1` image from the `mambaorg` repository. This means the container already has `mamba` installed, and we can go straight to installing the software we need.
 
