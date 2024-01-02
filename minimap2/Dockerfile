@@ -4,3 +4,5 @@ COPY environment.yaml /tmp/environment.yaml
 
 RUN micromamba install -y -n base -f /tmp/environment.yaml
 RUN micromamba clean --all --yes
+
+ENV PATH="$PATH:/opt/conda/bin"
