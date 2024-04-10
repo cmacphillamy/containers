@@ -1,7 +1,7 @@
-name: seqkit
+name: chopper
 channels:
   - conda-forge
   - bioconda
   - defaults
 dependencies:
-  - seqkit=2.6.1
+  - chopper=0.7.0

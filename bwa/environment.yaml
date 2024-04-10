@@ -1,7 +1,8 @@
-name: seqkit
+name: bwa
 channels:
   - conda-forge
   - bioconda
   - defaults
 dependencies:
-  - seqkit=2.6.1
+  - bwa=0.7.17
+  - samtools=1.19

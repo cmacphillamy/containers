@@ -1,7 +1,7 @@
-name: seqkit
+name: trim_galore 
 channels:
   - conda-forge
   - bioconda
   - defaults
 dependencies:
-  - seqkit=2.6.1
+  - trim-galore=0.6.10
