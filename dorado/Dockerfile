@@ -27,6 +27,7 @@ ENV CONDA_DEFAULT_ENV dorado
 RUN /bin/bash -c "source activate dorado" && \
 	conda install -c bioconda samtools -y && \
 	conda install -c anaconda pigz -y && \
+	conda install -c bioconda minimap2 -y && \
 	rm -rf /opt/conda/pkgs/* && \
 	echo "source activate dorado" > ~/.bashrc
 
